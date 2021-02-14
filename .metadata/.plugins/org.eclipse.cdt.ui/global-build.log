@@ -1,0 +1,32 @@
+14:21:29 **** Incremental Build of configuration Debug for project OBC ****
+make -j3 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/Components/lis3dsh -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/Common -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/BSP/inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/Components/lis302dl -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'AccelerometerTask':
+../Core/Src/main.c:655:22: warning: passing argument 1 of 'BSP_ACCELERO_GetXYZ' from incompatible pointer type [-Wincompatible-pointer-types]
+  BSP_ACCELERO_GetXYZ(&xyz);
+                      ^
+In file included from ../Core/Src/main.c:29:0:
+../Drivers/BSP/inc/stm32f4_discovery_accelerometer.h:86:9: note: expected 'int16_t * {aka short int *}' but argument is of type 'int16_t (*)[3] {aka short int (*)[3]}'
+ void    BSP_ACCELERO_GetXYZ(int16_t *pDataXYZ);
+         ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "OBC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/hongdeyu/Desktop/OBC task/OBC/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OBC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OBC.elf
+ 
+arm-none-eabi-objdump -h -S  OBC.elf  > "OBC.list"
+arm-none-eabi-objcopy  -O binary  OBC.elf  "OBC.bin"
+arm-none-eabi-size   OBC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34684	    280	  20920	  55884	   da4c	OBC.elf
+Finished building: default.size.stdout
+ 
+Finished building: OBC.bin
+ 
+Finished building: OBC.list
+ 
+14:21:45 **** Incremental Build of configuration Debug for project OBC ****
+make -j3 all 
+arm-none-eabi-size   OBC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34684	    280	  20920	  55884	   da4c	OBC.elf
+Finished building: default.size.stdout
+ 

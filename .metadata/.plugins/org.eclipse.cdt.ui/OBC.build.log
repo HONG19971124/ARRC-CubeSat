@@ -1,0 +1,10 @@
+14:21:45 **** Incremental Build of configuration Debug for project OBC ****
+make -j3 all 
+arm-none-eabi-size   OBC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34684	    280	  20920	  55884	   da4c	OBC.elf
+Finished building: default.size.stdout
+ 
+
+14:21:45 Build Finished. 0 errors, 0 warnings. (took 157ms)
+
