@@ -1,0 +1,14 @@
+21:15:54 **** Incremental Build of configuration Debug for project exp ****
+make -j3 all 
+arm-none-eabi-size   exp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30904	     24	  20776	  51704	   c9f8	exp.elf
+Finished building: default.size.stdout
+ 
+21:16:05 **** Incremental Build of configuration Debug for project exp ****
+make -j3 all 
+arm-none-eabi-size   exp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30904	     24	  20776	  51704	   c9f8	exp.elf
+Finished building: default.size.stdout
+ 
