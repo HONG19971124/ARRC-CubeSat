@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;queue/IWDG&apos;" deleteContents="false" description="Delete resource &apos;queue/IWDG&apos;" element1="/queue/IWDG" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1611038486847"/>&#x0A;<refactoring comment="Delete resource &apos;queue/OBC task&apos;" deleteContents="false" description="Delete resource &apos;queue/OBC task&apos;" element1="/queue/OBC task" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1611147125862"/>
+</session>

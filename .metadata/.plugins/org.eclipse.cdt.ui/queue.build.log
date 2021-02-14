@@ -1,0 +1,10 @@
+10:28:30 **** Incremental Build of configuration Debug for project queue ****
+make -j3 all 
+arm-none-eabi-size   queue.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31032	    124	  20764	  51920	   cad0	queue.elf
+Finished building: default.size.stdout
+ 
+
+10:28:30 Build Finished. 0 errors, 0 warnings. (took 240ms)
+
