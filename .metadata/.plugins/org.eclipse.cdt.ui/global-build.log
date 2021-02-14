@@ -1,0 +1,7 @@
+17:33:00 **** Incremental Build of configuration Debug for project DSP ****
+make -j3 all 
+arm-none-eabi-size   DSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40228	    488	  20752	  61468	   f01c	DSP.elf
+Finished building: default.size.stdout
+ 
