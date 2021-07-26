@@ -21,4 +21,9 @@
 ***
 ### Main flowchart
 ![](https://github.com/HONG19971124/ARRC-CubeSat/blob/main/png/MainFlow.png)
+### Test flowchart
+![](https://github.com/HONG19971124/ARRC-CubeSat/blob/main/png/TestMode.png)
+### Beacon flowchart
+![](https://github.com/HONG19971124/ARRC-CubeSat/blob/main/png/BeaconMode.png)
+### END
 ***
